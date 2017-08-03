@@ -4,15 +4,14 @@
 	</head>
 	<body>
 		<div>
-			<h3>Satan are looking to u!!!</h3>
+			<h3>GOOOOOOOOOD!!!</h3>
 		</div>
-
+{%for post in posts%}
 		<div>
-			{{posts}}
+			<p>{{post.published_date}}</p>
+			<h1>{{post.title}}</h1>
+			<p>{{post.text}}</p>
 		</div>
-
-		<div>
-			<h3>I said trust me!!!</h3>
-		</div>
+{%endfor%}
 	</body>
 </html>
